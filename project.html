@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+       
+        
+        #home {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        
+        #home div {
+            width: 50%;
+            background-color: #d5d5dd;
+            font-family: monospace;
+            text-align: center;
+            justify-content: center;
+        }
+        
+        #home div img {
+            width: 40%;
+            margin-left: 20%;
+        }
+        
+        button {
+            border-radius: 15PX;
+            background-color: #c7c7d5;
+        }
+        
+        .about {
+            background-color: #feeafa7e;
+            padding: 5% 5% 5% 20%;
+        }
+        #experience h2{padding: 5%;}
+        .experience {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: #feeafa7e;
+            margin-left: 5%;
+        }
+        
+        section#experience,
+        h2#skills {
+            background-color: #feeafa7e;
+        }
+        
+        .image-container {
+            width: 30%;
+            margin: 1%;
+            text-align: center;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        
+        .text-over {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 10px;
+            box-sizing: border-box;
+            transition: opacity 0.3s;
+        }
+        
+        .image-container:hover .text-over {
+            display: block;
+        }
+        
+        .image-container img {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .image-container p {
+            margin-top: 5px;
+            font-size: 14px;
+        }
+        
+        #experience .image-container img:hover {
+            opacity: .7;
+            transform: scale(.85);
+        }
+        
+        .SKILLS {
+            display: flex;
+            flex-direction: row;
+            background-color: #feeafa7e;
+            /* margin-left: 5%; */
+            padding: 5%;
+        }
+        
+        .SKILLS div {
+            width: 50%;
+            padding: 10%;
+            margin: 5%;
+        }
+        
+        div#Soft-skiis {
+            background-color: #F3D0D7;
+            padding: 5%;
+            margin: 3%;
+        }
+        
+        div#Technical-skiis {
+            background-color: #CAF0F8;
+            padding: 5%;
+            margin: 3%;
+        }
+        .project{
+            background-color: #feeafa7e;
+
+             display: flex;
+            flex-direction: row;}
+
+
+      .project div{
+         width: 50%;
+         margin: 5%;
+           }
+
+        .footer {
+
+            display: block;
+            /* text-align: center; */
+            background-color: #212529!important;
+            color: #ffffff8c !important;
+        }
+        
+        footer a {
+            padding: 7%;
+        }
+        
+        footer h3 , .footer div p{
+            margin-bottom: 5%;
+            text-align: center;
+        }
+
+        
+        .social-icons li {
+            display: inline;
+        }
+          
+        @media only screen and (max-width: 450px) {
+            .home {
+                display: flex;
+                flex-direction: column-reverse;
+                background-color: #feeafa7e;
+                align-items: stretch;
+            }
+            .home div {
+                width: 100%;
+                text-align: center;
+                padding: 3%;
+            }
+            .SKILLS {
+                display: flex;
+                flex-direction: column;
+                background-color: #feeafa7e;
+                align-items: stretch;
+            }
+            .SKILLS div {
+                width: 100%;
+                padding: 10%;
+                margin: auto;
+            }
+            .experience {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: #feeafa7e;
+    margin-left: 5%;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project {
+        background-color: #feeafa7e;
+        display: flex;
+        flex-direction: column;
+        align-content: space-around;
+        justify-content: center;
+        align-items: center;
+        padding: 2%;
+    }
+
+
+
+.project div{
+         width: 100%;
+margin: 7%;           }
+
+.project div img{
+         width: 100%;
+         height: 10%;
+}
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href=""> <img src="3.png" height="25%" width="25%" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home"> home </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">about </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills"> skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#project">project</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home">
+        <div>
+            <h1><br>Esraa Odat</h1>
+            <H4> Full Stack Web Developer</H4>
+            <a href="Esraa Odat CV .pdf" download="Esraa Odat CV.pdf">
+                <button> Download CV</button>
+            </a>
+        </div>
+        <div>
+            <img src="esraa.jpg" width="90%">
+        </div>
+    </header>
+
+    <div class="about">
+        <h2 id="about">About Me</h2>
+        <br>
+        <br>
+        <p>A passionate beginner in Full Stack Web Development, eager to enhance skills and contribute to innovative projects.</p>
+        <BR>
+    </div>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <div class="experience">
+            <div class="image-container">
+                <img src="coding-academy.jpg" alt="صورة 1">
+                <p> Orange Coding-Academy</p>
+                <div class="text-over">
+                    Learned and worked on web development using HTML, CSS, and JavaScript.
+                </div>
+            </div>
+            <div class="image-container">
+                <img src="sdkjfif.jfif" alt="صورة 2">
+                <p>SDK Company (September 2023 - December 2023).</p>
+                <div class="text-over">
+                    Participated in an intensive CCNA course, applying learned concepts practically in real-world scenarios, demonstrating hands-on expertise by contributing effectively to collaborative projects.
+                </div>
+            </div>
+            <div class="image-container">
+                <img src="Ideco Logo.jpg" alt="صورة 3">
+                <p>Electricity Company (July 2023 - September 2023)</p>
+            </div>
+        </div><BR><BR>
+    </section>
+
+    <div class="SKILLS">
+        <h2 id="skills">SKILLS</h2>
+        <div id="Soft-skiis">
+            <h4>Soft skills</h4>
+            <ul>
+                <li>Time Management and multitasking.</li>
+                <li>Good Communication Skills.</li>
+                <li>work under pressure.</li>
+            </ul>
+        </div>
+        <div id="Technical-skiis">
+            <h4>Technical skills</h4>
+            <ul>
+                <li>HTML5 </li>
+                <li>CSS </li>
+                <li>JavaScript</li>
+                <li>Bootstrap</li>
+                <li>CCNA</li>
+            </ul>
+        </div>
+    </div>
+    <div id="project" class="project">
+        <div>
+        <h2>project</h2>
+        <h6>Network Design and Performance Evaluation for a Mall: </h4>
+            <ul>
+                <li>Customized mall network design through Packet Tracer.</li>
+                <li>Assessed performance using NS2 Simulator to optimize network efficiency and traffic management in a simulated environment.</li>
+            </ul>
+        </div>
+        <div>
+        
+        <img src="packet-tracer.png" alt=""  width="100%" height="60%">
+        </div>
+            
+        </div>
+    <footer class="footer">
+        <div>
+            <h3 id="contact">Connect with me</h3>
+            <ul class="social-icons">
+                <li><a target="_blank" href="https://www.linkedin.com/in/esraa-odat-45b6b3273?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="linkedin.jpg" width="5%" height="5%"></a></li>
+                <li><a target="_blank" href="https://api.whatsapp.com/send?phone=+962797109414"><img src="whatsapp.jpg" width="5%" height="5%"></a></li>
+                <li><a target="_blank" href="tel:+962797109414"><img src="tel.webp" width="5%" height="5%"></a></li>
+                <li><a target="_blank" href="mailto:esraaodat222@gmail.com"><img src="gmail.jpg" width="5%" height="5%"></a></li>
+            </ul>
+        </div>
+        <hr>
+        <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3363.009728827796!2d35.849668799999996!3d32.5525856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151c7715f2c2e7ab%3A0x51755840c8ddbefd!2sOrange%20Digital%20Village%20Irbid!5e0!3m2!1sar!2sjo!4v1716214387031!5m2!1sar!2sjo" width="100%" height="50%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <hr>
+        <div>
+                <img src="3.png"  width="5%" height="5%">
+                <p>&copy; 2024 All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+</body>
+</html>
